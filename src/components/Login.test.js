@@ -45,7 +45,7 @@ test("password input should be empty", () => {
 test("button should be disabled", () => {
   render(<Login />);
   const buttonEl = screen.getByRole("button");
-  expect(buttonEl).toBeDisabled;
+  expect(buttonEl).toBeDisabled();
 });
 
 test("loading should not be rendered", () => {
